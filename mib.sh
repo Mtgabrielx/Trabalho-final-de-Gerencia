@@ -16,7 +16,7 @@ log "Atualizando pacotes..."
 apt update
 
 log "Instalando dependências SNMP..."
-apt install -y libsnmp-dev tkmib snmpd iperf3 speedtest-cli
+apt install -y libsnmp-dev tkmib snmpd iperf3 speedtest-cli snmp
 
 # ------------------ 2. Ajustar /etc/snmp/snmp.conf ------------------
 SNMP_CONF="/etc/snmp/snmp.conf"

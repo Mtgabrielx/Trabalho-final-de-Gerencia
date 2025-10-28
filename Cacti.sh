@@ -66,7 +66,7 @@ adjust_php_ini(){
   sed -i -E 's~^\s*;?\s*date\.timezone\s*=.*~date.timezone = US/Central~' "$file" || true
   sed -i -E 's~^\s*;?\s*memory_limit\s*=.*~memory_limit = 512M~' "$file" || true
   sed -i -E 's~^\s*;?\s*max_execution_time\s*=.*~max_execution_time = 60~' "$file" || true
-  grep -q 'date.timezone' "$file" || echo "date.timezone = US/Central" >> "$file"
+  grep -q 'date.timezone' "$file" || echo "date.timezone = America/Fortaleza" >> "$file"
 }
 adjust_php_ini "$PHP_INI_APACHE"
 adjust_php_ini "$PHP_INI_CLI"
