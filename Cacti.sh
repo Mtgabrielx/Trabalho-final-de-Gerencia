@@ -157,6 +157,7 @@ DirectoryIndex index.php
 EOF
 
 log "Habilitando site do Cacti..."
+echo "ServerName localhost" >> /etc/apache2/apache2.conf 
 a2ensite cacti > /dev/null
 systemctl reload apache2
 
